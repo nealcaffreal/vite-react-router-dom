@@ -1,13 +1,13 @@
 /*
  * @Author: yangming
- * @LastEditTime: 2022-06-15 09:36:24
+ * @LastEditTime: 2022-06-15 15:01:12
  * @Description: 
  */
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import Expenses from "./routes/expenses";
-import Invoices from "./routes/invoices";
+import Invoices from "./routes/invoicesIndex";
 import Invoice from "./routes/invoice";
 import './index.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
