@@ -1,3 +1,8 @@
+/*
+ * @Author: yangming
+ * @LastEditTime: 2022-06-15 09:36:24
+ * @Description: 
+ */
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
@@ -13,6 +18,14 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/" element={<App />} >
           <Route path="expenses" element={<Expenses />} />
           <Route path="invoices" element={<Invoices />} >
+            <Route
+              index
+              element={
+                <main style={{ padding: "1rem" }}>
+                  <p>Select an invoice</p>
+                </main>
+              }
+            />
             <Route path=":invoiceId" element={<Invoice />} />
           </Route>  
         </Route>
